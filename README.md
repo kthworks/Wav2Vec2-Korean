@@ -51,7 +51,7 @@ mixed_precision_training: Native AMP
 
 ### Prerequisites
 Numpy: ```pip install numpy```  
-Pytorch (ver = 1.11.0): You can install from [here](https://pytorch.org/get-started/locally/) to suit your environment.    
+Pytorch (ver = 1.11.0): You can install from [here](https://pytorch.org/get-started/locally/) to suit your environment. (Also CUDA is required)    
 Torchaudio: ```pip install torchaudio```  
 Matplotlib: ```pip install matplotlib```  
 Librosa: ```conda install -c conda-forge librosa```  
@@ -62,7 +62,7 @@ Datasets (ver = 2.2.2): ```pip install datasets```
 
 이곳에 기재되지 않은 라이브러리 이외에 추가적으로 라이브러리가 필요하다는 경고문이 보인다면 해당 라이브러리를 추가로 설치해주시기 바랍니다.
 
-p.s. 본 프로젝트를 위한 별도의 가상환경을 생성하신 후에 위의 라이브러리들을 설치하시길 권장드립니다.
+p.s. 본 프로젝트를 위한 별도의 가상환경을 생성하신 후에 위의 라이브러리들을 설치하시길 권장드립니다. 또한, CUDA가 사용가능한 상태여야 inference를 할 수 있습니다.
 
 ### Inference with pretrained Model
 1. Code > Download Zip 를 통해 본 프로젝트를 다운받아주시기 바랍니다.
@@ -71,7 +71,7 @@ p.s. 본 프로젝트를 위한 별도의 가상환경을 생성하신 후에 �
 
 * Command
 ```
-$ python ./main.py
+$ python ./infernece_main.py
 ```
 
 * Output
@@ -81,10 +81,12 @@ $ python ./main.py
 ```  
 위 문장이 보이면 마이크를 통해 말씀해주시면 됩니다.
 음성이 수집된 이후 곧바로 인식된 결과가 제공됩니다.
+
 ```
 음성인식 결과가 제공됩니다.
 ```
 
+* Jupyter notebook을 통해 inference.ipynb 파일을 이용하시면 더욱 편리하게 inference를 해보실 수 있습니다.
 ## 4. Troubleshoots and Contributing
 
 본 프로젝트와 관련한 이슈나 문의 사항이 있다면 아래를 통해 연락주시면 감사하겠습니다.

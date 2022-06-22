@@ -37,21 +37,21 @@ RAM : 32GB
 [Test](https://huggingface.co/datasets/Taeham/wav2vec2-ksponspeech-test): (60000 ~ 60100th data in Ksponspeech)  
 
 **Hyperparameter**
-learning_rate: 0.0003
-train_batch_size: 4
-eval_batch_size: 4
-seed: 42
-optimizer: Adam with betas=(0.9,0.999) and epsilon=1e-08
-lr_scheduler_type: linear
-lr_scheduler_warmup_steps: 500
-num_epochs: 30
-mixed_precision_training: Native AMP
+learning_rate: 0.0003  
+train_batch_size: 4  
+eval_batch_size: 4  
+seed: 42  
+optimizer: Adam with betas=(0.9,0.999) and epsilon=1e-08  
+lr_scheduler_type: linear  
+lr_scheduler_warmup_steps: 500  
+num_epochs: 30  
+mixed_precision_training: Native AMP  
 
 ## 3. How to use?
 
 ### Prerequisites
 Numpy: ```pip install numpy```  
-Pytorch (ver = 1.11.0): You can install from [here](https://pytorch.org/get-started/locally/) to suit your environment. (Also CUDA is required)    
+Pytorch (ver = 1.11.0): You can install from [here](https://pytorch.org/get-started/locally/) to suit your environment. (Also CUDA is required)      
 Torchaudio: ```pip install torchaudio```  
 Matplotlib: ```pip install matplotlib```  
 Librosa: ```conda install -c conda-forge librosa```  
@@ -62,7 +62,8 @@ Datasets (ver = 2.2.2): ```pip install datasets```
 
 이곳에 기재되지 않은 라이브러리 이외에 추가적으로 라이브러리가 필요하다는 경고문이 보인다면 해당 라이브러리를 추가로 설치해주시기 바랍니다.
 
-p.s. 본 프로젝트를 위한 별도의 가상환경을 생성하신 후에 위의 라이브러리들을 설치하시길 권장드립니다. 또한, CUDA가 사용가능한 상태여야 inference를 할 수 있습니다.
+* 본 프로젝트를 위한 별도의 가상환경을 생성하신 후에 위의 라이브러리들을 설치하시길 권장드립니다.  
+또한, CUDA가 사용가능한 상태여야 inference를 할 수 있습니다.
 
 ### Inference with pretrained Model
 1. Code > Download Zip 를 통해 본 프로젝트를 다운받아주시기 바랍니다.

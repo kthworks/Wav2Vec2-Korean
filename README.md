@@ -45,7 +45,6 @@ optimizer: Adam with betas=(0.9,0.999) and epsilon=1e-08
 lr_scheduler_type: linear  
 lr_scheduler_warmup_steps: 500  
 num_epochs: 30  
-mixed_precision_training: Native AMP  
 
 ## 3. How to use?
 

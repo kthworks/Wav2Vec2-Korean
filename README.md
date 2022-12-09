@@ -36,7 +36,7 @@ RAM : 32GB
 [Validation](https://huggingface.co/datasets/Taeham/wav2vec2-ksponspeech-test): (20000 ~ 20100th data in Ksponspeech)   
 [Test](https://huggingface.co/datasets/Taeham/wav2vec2-ksponspeech-test): (60000 ~ 60100th data in Ksponspeech)  
 
-**Hyperparameter**
+**Hyperparameter**  
 learning_rate: 0.0003  
 train_batch_size: 4  
 eval_batch_size: 4  
